@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>About Us</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Pet Salon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>About Us</h1>
+
+    <h2>Welcome to the Salon</h2>
+
+    <div id="salon-info">
+        
+    </div>
+
+    <h3>Register for services here.</h3>
+
+    <section>
+
+    <div id="registration-table">
+
+        <form class="border p-4 mt-5 bg-light">
+
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input class="form-control" type="text" placeholder="Enter Your Pet's Name" required name="name">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input class="form-control" type="text" placeholder="Enter Your Pet's Age" required name="username">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Breed</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Breed</option>
+                    <option value="1">Dog</option>
+                    <option value="2">Cat</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Service</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Service</option>
+                    <option value="1">Bath</option>
+                    <option value="2">Trim</option>
+                    <option value="3">Both</option>
+                </select>
+            </div>
+
+            <div class="mt-5">
+                <button class="btn btn-primary" type="submit" onclick="registerUser(event)">Register</button>
+                <button class="btn btn-secondary" type="reset">Reset</button>
+            </div>
+
+
+        </form>
+
+    </div>
+
+    </section>
+
+    <div class ="container" id="cardContainer">
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
