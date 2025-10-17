@@ -35,9 +35,69 @@
         </nav>
     </section>
 
+    <section class="container m-5">
+
+        <h1>Registration</h1>
+
+        <div id="registration-table">
+
+         <form class="border p-4 mt-5 bg-light" id="petRegistrationForm">
+
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input class="form-control" type="text" placeholder="Enter Your Pet's Name" required name="name">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input class="form-control" type="text" placeholder="Enter Your Pet's Age" required name="age">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Breed</label>
+                <select class="form-select" aria-label="Default select example" name="breed">
+                    <option selected>Select Breed</option>
+                    <option value="1">Dog</option>
+                    <option value="2">Cat</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <select class="form-select" aria-label="Default select example" name="gender">
+                    <option selected>Select Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Service</label>
+                <select class="form-select" aria-label="Default select example" name="service">
+                    <option selected>Select Service</option>
+                    <option value="1">Bath</option>
+                    <option value="2">Trim</option>
+                    <option value="3">Both</option>
+                </select>
+            </div>
+
+            <div class="mt-5">
+                <button class="btn btn-primary" type="submit" onclick="registerPet(event)">Register</button>
+                <button class="btn btn-secondary" type="reset">Reset</button>
+            </div>
+
+        </form>
+        <section class="container m-5">
+            <h2>Registered Pets</h2>
+
+            <div class="m-4" id="petCardContainer">
+                
+            </div>
+        </section>
+    </section>
+
     <section>
-        <div id="petList"></div>
-        <div id="petCount"></div>
+       
 
     </section>
 

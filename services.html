@@ -36,9 +36,37 @@
 
     <h1>Services</h1>
 
+    <div id="servicesForm">
+
+         <form id="servicesForm" class="container m-5 bg-light border p-4">
+
+            <div class="mb-3">
+                <label class="form-label">Service</label>
+                <input type="text" id="serviceName" class="form-control" placeholder="Grooming" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Description</label>
+                <input type="text" id="serviceDescription" class="form-control" placeholder="includes..." required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Price</label>
+                <input type="number" id="servicePrice" placeholder="$59.99" class="form-control" required>
+            </div>
+            
+           <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primart m-1">Save</button>
+                <button type="reset" class="btn btn-secondary m-1">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="./scripts/services.js"></script>
 
 </body>
 

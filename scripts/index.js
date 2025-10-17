@@ -19,4 +19,3 @@ const breed = userRegistrationForm.elements["breed"].value;
 const gender = userRegistrationForm.elements["gender"].value;
 const service = userRegistrationForm.elements["service"].value;
 
-function countPets (){}
