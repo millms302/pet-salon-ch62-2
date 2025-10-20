@@ -1,8 +1,17 @@
-const petRegistrationForm = document.getElementById("petRegistrationForm");
+const petRegistrationForm = document.getElementById("registration-form");
+
+// Pet Array
+
+pets = [
+    { name: "Diesel", breed: "dog", gender: "male", age: 8, service: "both" },
+    { name: "Calypso", breed: "cat", gender: "female", age: 12, service: "bath" },
+    { name: "Nala", breed: "cat", gender: "female", age: 17, service: "trim" },
+]
+console.log("Pets Arrray Loaded", pets)
 
 // Pet Function Constructor
 
-function Pet(name, age, breed, gender, service){
+function Pet(name, age, breed, gender, service) {
     this.name = name;
     this.age = age;
     this.breed = breed;
@@ -12,7 +21,7 @@ function Pet(name, age, breed, gender, service){
 
 
 
-function registerPet(event){
+function registerPet(event) {
     event.preventDefault();
 
     // get the values of the form
@@ -23,7 +32,7 @@ function registerPet(event){
     const service = petRegistrationForm.elements["service"].value;
 
     // New Pet Instance
-    const newPet = new Pet(name, age, breed, gender, service );
+    const newPet = new Pet(name, age, breed, gender, service);
 
     // Test
     console.log(newPet);
@@ -37,11 +46,14 @@ function registerPet(event){
 
     const cardBody = document.createElement("div");
     cardBody.className = "card-body";
-   
+
 
     const cardTitle = document.createElement("h3");
     cardTitle.className = "card-title";
-    cardTitle.textContent = newPet.name;
+    cardTitle.textContent = "Registered Pets";
+
+    cardBody.className = "card-body";
+    cardBody.textContent = newPet.name, newPet.age, newPet.service, newPet.breed, newPet.gender;
 
 
     cardBody.appendChild(cardTitle);
@@ -49,3 +61,14 @@ function registerPet(event){
     petCardContainer.appendChild(card);
 }
 
+function displayPetCount() {
+    total = pets.length;
+    document.getElementById("displayPetCount").textContent = "Total Registered Pets" + total;
+}
+
+function displayPetNames() {
+    let listItems = "";
+    for (let i = 0; i < pets.length; i++) {
+        listItems += `<li class="list-group-item">${Pet[i].name} - ${Pet[i].service} - ${Pet[i].age} - ${Pet[i].gender} - ${Pet[i].breed}`
+    }
+}

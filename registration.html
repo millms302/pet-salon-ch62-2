@@ -39,9 +39,9 @@
 
         <h1>Registration</h1>
 
-        <div id="registration-table">
+        <div id="registration-form">
 
-         <form class="border p-4 mt-5 bg-light" id="petRegistrationForm">
+         <form class="border p-4 mt-5 bg-light form-bordered border-primary" id="petRegistrationForm">
 
             <div class="mb-3">
                 <label class="form-label">Name</label>
@@ -90,9 +90,50 @@
         <section class="container m-5">
             <h2>Registered Pets</h2>
 
-            <div class="m-4" id="petCardContainer">
-                
+            <div id="petCardContainer">
+                <div class="table-responsive">
+
+                <table class="table table-bordered border-primary">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Service</th>
+                        <th scope="col">Breed</th>
+                        <th scope="col">Gender</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>Diesel</td>
+                            <td>8</td>
+                            <td>Both</td>
+                            <td>Dog</td>
+                            <td>Male</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>Calypso</td>
+                            <td>12</td>
+                            <td>Bath</td>
+                            <td>Cat</td>
+                            <td>Female</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>Nala</td>
+                            <td>17</td>
+                            <td>Trim</td>
+                            <td>Cat</td>
+                            <td>Female</td>
+                            </tr>
+                        </tbody>
+                </table>
             </div>
+        </div>
+        </div>
         </section>
     </section>
 
