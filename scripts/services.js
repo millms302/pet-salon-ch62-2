@@ -18,14 +18,31 @@ $("#servicesForm").on("submit", function (event) {
 
     // 2. Validate the values: if there is nothing in the service and description field, we will show them the error. 1 means negative
     if(!serviceName || !serviceDescription || servicePrice <= 0){
-        alert("All Values Are Required and the Price Must Be Greater Than Zero");
+       
+
+        //ASSIGNMENT 1: remove the above alert and usejQuery to add a red border to missing fields.
 
         return;
-    } else
-        // 3. Save the Service (Assignment 3) 
+    } else {
+        // 3. Save the Service (Assignment 3)
+        
+        alert("Service has been saved.");
+    }
 
-
-
+    // 4. Clear the form
+    $("servicesForm")[0].reset();
 
 
 });
+
+$("#changeModeButton").click(function () {
+    $("body").toggleClass("dark-mode");
+
+    const isDark = $("body").hasClass("dark-mode");
+
+    if (isDark){
+        $("").text("Dark Mode")
+    } else {
+        $("").text("Light Mode");
+    }
+})

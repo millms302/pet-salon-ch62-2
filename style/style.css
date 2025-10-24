@@ -1,10 +1,23 @@
-.container{
-    display: block;
-    border-color: blue;
-    border: 3px;
-    border: 5px;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+/* Light Mode Colors; Default*/
+
+:root{
+    --background: #f4f4fb;
+    --surface: #fdfdff;
+    --text: #1A2744;
+    --button: #008fff;
+}
+
+/* Dark Mode */
+.dark-mode {
+    --background: #1a2744;
+    --surface: #23345a;
+    --text: #f4f4fb;
+    --button: #45adff;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    color: var(--surface);
+    color: var(--button)
 }
