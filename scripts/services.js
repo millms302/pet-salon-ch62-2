@@ -35,6 +35,8 @@ $("#servicesForm").on("submit", function (event) {
 
 });
 
+// DARK MODE //
+
 $("#changeModeButton").click(function () {
     $("body").toggleClass("dark-mode");
 
@@ -46,3 +48,24 @@ $("#changeModeButton").click(function () {
         $("").text("Light Mode");
     }
 })
+
+// ASSIGNMENT 3: SAVE TO LOCAL STORAGE
+
+// STEP 1: LINK TO SUBMIT AS FUNCTION
+$("#submit").click(function () {
+
+//STEP 2: CREATE CONSTANTS
+
+     const serviceName = $("#serviceName", servicename);
+     const serviceDescription = $("#serviceDescription", servicedescription);
+     const servicePrice = $("#servicePrice", serviceprice);
+
+// STEP 3: SAVE TO LOCAL STORAGE:
+    if(serviceName === "" || serviceDescription === "" || servicePrice === ""){
+        alert("All Fields are Rquired")
+    } else {
+        localStorage.setItem("serviceNameKey", serviceName);
+        localStorage.setItem("serviceDescriptionKey", serviceDescription);
+        localStorage.setItem("servicePriceKey", servicePrice);}
+})
+// STEP 4 PROFIT
