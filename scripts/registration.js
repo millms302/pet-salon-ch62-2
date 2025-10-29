@@ -69,6 +69,6 @@ function displayPetCount() {
 function displayPetNames() {
     let listItems = "";
     for (let i = 0; i < pets.length; i++) {
-        listItems += `<li class="list-group-item">${Pet[i].name} - ${Pet[i].service} - ${Pet[i].age} - ${Pet[i].gender} - ${Pet[i].breed}`
+        listItems += `<li class="list-group-item">${Pet[i].name} - ${Pet[i].service} - ${Pet[i].age} - ${Pet[i].gender} - ${Pet[i].breed}`;
     }
 }
