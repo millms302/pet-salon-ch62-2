@@ -7,6 +7,12 @@
     --button: #008fff;
 }
 
+
+body div#servicesForm form {
+    background-color: white;
+}
+
+
 /* Dark Mode */
 .dark-mode {
     --background: #1a2744;
@@ -21,4 +27,9 @@ body {
     color: var(--surface);
     color: var(--button);
     
+}
+
+
+body.dark-mode div#servicesForm form {
+    background-color: var(--background);
 }

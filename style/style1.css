@@ -9,3 +9,7 @@ body {
     border-color:black;
     border-width: 5px;
 }
+
+.registration-form {
+    text-align: left;
+}

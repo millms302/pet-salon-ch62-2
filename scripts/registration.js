@@ -1,4 +1,4 @@
-const petRegistrationForm = document.getElementById("registration-form");
+const petRegistrationForm = document.getElementById("petRegistrationForm");
 
 // Pet Array
 
@@ -31,6 +31,26 @@ function registerPet(event) {
     const gender = petRegistrationForm.elements["gender"].value;
     const service = petRegistrationForm.elements["service"].value;
 
+    if (name == "") {
+        petRegistrationForm.elements["name"].classList.add("border", "border-danger");
+    };
+
+    if (age == "") {
+        petRegistrationForm.elements["age"].classList.add("border", "border-danger");
+    };
+
+    if (breed == "Select Animal") {
+        petRegistrationForm.elements["breed"].classList.add("border", "border-danger");
+    };
+
+    if (gender == "Select Gender") {
+        petRegistrationForm.elements["gender"].classList.add("border", "border-danger");
+    };
+
+    if (service == "Select Service") {
+        petRegistrationForm.elements["service"].classList.add("border", "border-danger");
+    };
+
     // New Pet Instance
     const newPet = new Pet(name, age, breed, gender, service);
 
@@ -53,7 +73,7 @@ function registerPet(event) {
     cardTitle.textContent = "Registered Pets";
 
     cardBody.className = "card-body";
-    cardBody.textContent = newPet.name, newPet.age, newPet.service, newPet.breed, newPet.gender;
+    cardBody.textContent = (newPet.name, newPet.age, newPet.service, newPet.breed, newPet.gender);
 
 
     cardBody.appendChild(cardTitle);
